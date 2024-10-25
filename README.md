@@ -62,35 +62,36 @@ Node.js utiliza un sistema de módulos (CommonJS) para organizar y reutilizar c�
 
  Para comenzar a utilizar Node.js, sigue estos pasos básicos:
 
- 1. **Instalación**
-    Puedes descargar e instalar Node.js desde nodejs.org
-    
-    Después de instalar, verifique la instalación:
-    node -v
-    npm -v
-    
+1. **Instalación**:
+
+   Puedes descargar e instalar Node.js desde nodejs.org .
+   
+   Después de instalar, verifique la instalación
+   ```html
+   node -v
+   npm -v
 2. **Hola Mundo en Node.js**
-   Crea un archivo llamado app.js:
-   // app.js
+
+   Crea un archivo llamado app.js
+   ```html
+     // app.js
    console.log("¡Hola, mundo desde Node.js!");
-
-   Ejecuta el archivo con el comando:
+3. **Ejecuta el archivo con el comando:**
+    ```html
    node app.js
-
-3. **Servidor básico**
-  Un servidor HTTP simple en Node.js puede configurarse de la siguiente forma:
-
-  const http = require('http');
-const server = http.createServer((req, res) => {
+4. **Servidor básico**:
+   ```html
+   const http = require('http');
+   const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
     res.end('¡Hola desde Node.js!');
-});
+   });
 
-server.listen(3000, () => {
+   server.listen(3000, () => {
     console.log('Servidor escuchando en http://localhost:3000');
-});
+   });
 
-Iniciar el servidor con:
-node app.js
-
+2. **Iniciar el servidor con**
+   ```html
+   node app.js
